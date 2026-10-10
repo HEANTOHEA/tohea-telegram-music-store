@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Telegram Music Store — browse music shared with permission.">
+  <title>Tohea Music Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Tohea Music Store home">
+      <span class="brand-icon">♫</span>
+      <span>Tohea <strong>Music Store</strong></span>
+    </a>
+    <nav>
+      <a href="#library">បណ្ណាល័យតន្ត្រី</a>
+      <a href="#about">អំពីហាង</a>
+      <a class="telegram-link" href="https://t.me/tohea_app_storage" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> YOUR MUSIC LIBRARY</p>
+        <h1>ស្វែងរកតន្ត្រី<br><span>ដែលអ្នកចូលចិត្ត។</span></h1>
+        <p class="hero-description">បណ្ណាល័យតន្ត្រីសាមញ្ញ ស្អាត និងងាយស្រួលប្រើ។ សូមទាញយកតែឯកសារដែលអ្នកមានសិទ្ធិប្រើប្រាស់ប៉ុណ្ណោះ។</p>
+        <a class="primary-button" href="#library">រុករកតន្ត្រី <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Decorative music illustration">
+        <div class="disc disc-back"></div>
+        <div class="disc disc-front"><span>♫</span></div>
+        <div class="floating-note note-one">♪</div>
+        <div class="floating-note note-two">♫</div>
+        <div class="art-caption"><span class="art-dot"></span> SOUND FOR EVERY MOMENT</div>
+      </div>
+    </section>
+
+    <section class="library-section" id="library">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>បណ្ណាល័យតន្ត្រី</h2>
+          <p class="muted">ជ្រើសរើសបទដែលមានសិទ្ធិចែករំលែក ឬទាញយក។</p>
+        </div>
+        <div class="track-count"><strong id="trackCount">6</strong><span>បទ</span></div>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="ស្វែងរកបទ ឬសិល្បករ..." aria-label="ស្វែងរកបទ ឬសិល្បករ">
+        </label>
+        <div class="filters" role="group" aria-label="Filter tracks">
+          <button class="filter active" data-filter="all">ទាំងអស់</button>
+          <button class="filter" data-filter="chill">Chill</button>
+          <button class="filter" data-filter="instrumental">Instrumental</button>
+          <button class="filter" data-filter="pop">Pop</button>
+        </div>
+      </div>
+
+      <div class="track-list" id="trackList" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>រកមិនឃើញបទដែលត្រូវនឹងការស្វែងរកទេ។</p>
+      <p class="demo-note">ចំណាំ៖ បទក្នុងបញ្ជីខាងក្រោមជាទិន្នន័យគំរូប៉ុណ្ណោះ។ សូមកែបញ្ជីក្នុង <code>script.js</code> ដោយដាក់តែបទ និងតំណដែលអ្នកមានសិទ្ធិចែករំលែក។</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-icon">♫</div>
+      <div>
+        <p class="eyebrow">ABOUT THIS STORE</p>
+        <h2>តន្ត្រីល្អ ចាប់ផ្ដើមពីការចែករំលែកដោយគោរពសិទ្ធិ។</h2>
+        <p class="muted">នេះជាគេហទំព័រ Static។ វាអាចបង្ហាញបញ្ជីតន្ត្រី និងបើកតំណដែលអ្នកផ្ដល់ឱ្យ ប៉ុន្តែមិនដំណើរការ Node.js ឬផ្ទុកឯកសារទៅ Telegram ដោយខ្លួនឯងទេ។</p>
+      </div>
+      <a class="secondary-button" href="https://t.me/tohea_app_storage" target="_blank" rel="noopener noreferrer">ទាក់ទងតាម Telegram ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-icon">♫</span><span>Tohea <strong>Music Store</strong></span></a>
+    <p>© <span id="year"></span> Tohea Music Store · សូមគោរពសិទ្ធិអ្នកបង្កើតស្នាដៃ។</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
